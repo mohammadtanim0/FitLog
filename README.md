@@ -27,33 +27,3 @@ FitLog is a responsive, dark-and-clean workout library and daily training planne
 8. Loading states, error handling, and a 404 page.
 9. Deployment-safe SPA routing through `vercel.json`.
 10. Reusable React components and context-based state management.
-
-## Run locally
-
-```bash
-npm install
-npm run dev
-```
-
-Then open the local Vite URL shown in the terminal.
-
-## Production build
-
-```bash
-npm run build
-npm run preview
-```
-
-## Suggested Git commits
-
-```text
-git add . && git commit -m "initial FitLog project setup"
-git add . && git commit -m "added API service and loading state"
-git add . && git commit -m "built responsive navbar and hero"
-git add . && git commit -m "added workout library cards and sorting"
-git add . && git commit -m "built workout details page"
-git add . && git commit -m "added today's plan and saved state"
-git add . && git commit -m "added toast notifications and plan actions"
-git add . && git commit -m "added responsive styling and 404 page"
-git add . && git commit -m "added deployment config and README"
-```
