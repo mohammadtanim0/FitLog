@@ -10,8 +10,23 @@ export default function Navbar() {
       <nav className="navbar container">
         <Link to="/" className="brand-link"><Logo /></Link>
         <div className="nav-links">
-          <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Workout</NavLink>
-          <NavLink to="/my-plan" className={({ isActive }) => isActive ? 'active' : ''}>My Plan</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Workout
+          </NavLink>
+
+          <NavLink
+            to="/my-plan"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            My Plan
+          </NavLink>
         </div>
         <div className="nav-badges">
           <Link to="/my-plan" className="counter plan-counter"><ClipboardList size={15} /> Plan <b>{plan.length}</b></Link>
